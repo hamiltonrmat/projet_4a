@@ -8,13 +8,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-st.title('Projet 4A - AgriBalyse')
+st.title('Projet 4A - Traitement de données alimentaires')
 
 #ajouter une image
 st.image('Agribalyse-image1.png')
 st.caption('Image')
 
-st.header('Exemples pour écrire du text')
+st.header('La base de données AgriBalyse')
 
 st.write("This is some text.")
 
