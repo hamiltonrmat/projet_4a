@@ -86,3 +86,12 @@ if confirm:
     min_variable.metric("Min", df[variable_select].min())
     max_variable.metric("Max", df[variable_select].max())
     mean_variable.metric("Moyenne", df[variable_select].mean())
+
+st.header('Le score unique EF')
+
+
+st.line_chart(df['Score unique EF'])
+min_EF, max_EF, mean_EF = st.columns(3)
+min_EF.metric("Min", df['Score unique EF'].min())
+max_EF.metric("Max", df['Score unique EF'].max())
+mean_EF.metric("Moyenne", df['Score unique EF'].mean())
