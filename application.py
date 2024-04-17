@@ -6,6 +6,8 @@ import streamlit as st
 
 st.title('Projet 4A - AgriBalyse')
 
+st.image('Agribalyse-image1.png')
+
 st.header('Exemples pour écrire du text')
 
 st.write("This is some text.")
