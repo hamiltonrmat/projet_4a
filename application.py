@@ -82,3 +82,7 @@ confirm = st.checkbox('Afficher détails')
 if confirm:
     st.write(variable_select)
     st.line_chart(df[str(variable_select)])
+    min_variable, max_variable, mean_variable = st.columns(3)
+    min_variable.metric("Min", str(df[str(variable_select)]))
+    max_variable.metric("Max", str(df[str(variable_select)]))
+    mean_variable.metric("Moyenne", str(df[str(variable_select)]))
