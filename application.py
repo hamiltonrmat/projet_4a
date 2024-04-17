@@ -61,9 +61,20 @@ a = np.round(df.shape[0] / data.shape[0],3)*100
 st.write("Porcentage de produits gardés (par rapport au total) :", a, " %")
 st.divider()
 
-option = st.selectbox('Variables?', (i for i in cols))
+variables = ['Changement climatique',
+       "Appauvrissement de la couche d'ozone", "Rayonnements ionisants",
+       "Formation photochimique d'ozone", "Particules fines",
+       'effets_toxico_non_cancer', 'effets_toxico_cancer',
+       'Acidification terrestre et eaux douces', 'Eutrophisation eaux douces',
+       'Eutrophisation marine', 'Eutrophisation terrestre',
+       "Écotoxicité pour écosystèmes aquatiques d'eau douce",
+       'Utilisation du sol', 'Épuisement des ressources eau',
+       'Épuisement des ressources énergétiques',
+       'Épuisement des ressources minéraux']
+st.header('Les variables')
+cols_list = st.selectbox('Choisisez une variable', (i for i in variables))
 
-st.write('You selected:', option)
+st.write('Votre selection:', option)
 
 st.header('Score unique EF')
 st.line_chart(df['Score unique EF'])
