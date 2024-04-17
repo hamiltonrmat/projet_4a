@@ -22,7 +22,7 @@ st.divider() # diviseur
 
 st.write("This text is between the horizontal rules.")
 
-st.divider()  # 👈 Another horizontal rule
+st.divider() 
 
 st.caption('Mini text pour expliquer quelque chose')
 
