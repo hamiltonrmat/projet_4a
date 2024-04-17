@@ -36,9 +36,13 @@ cols = list(data.columns)
 data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "effets_toxico_cancer"})
 
 ## ici oui on l'affiche le dataset avec st
-st.write("Les données AgriBalyse brutes")
+st.header("Les données AgriBalyse brutes")
 st.dataframe(data)
 st.write(data.shape)
+col1, col2 = st.columns(2)
+col1.metric("Lignes", "70 °F", "1.2 °F")
+col2.metric("Produits", "9 mph", "-8%")
+
 
 st.divider()
 
