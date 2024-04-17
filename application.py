@@ -7,7 +7,7 @@ sys.path.insert(0, parent_dir)
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-import plotly as px
+import plotly.express as px
 
 st.title('Projet 4A - Traitement de données alimentaires')
 
