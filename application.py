@@ -77,6 +77,8 @@ variables = ['Changement climatique',
 st.header('Les variables')
 variable_select = st.selectbox('Choisisez une variable', (i for i in variables))
 
-st.write('Votre selection:', variable_select)
+confirm = st.checkbox('Afficher détails')
 
-st.line_chart(df[str(variable_select)])
+if confirm:
+    st.write(variable_select)
+    st.line_chart(df[str(variable_select)])
