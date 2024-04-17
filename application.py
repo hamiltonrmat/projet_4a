@@ -43,8 +43,7 @@ st.dataframe(data)
 
 st.divider()
 
-st.write("Description statistique du dataset")
-st.dataframe(data.describe())
+st.header('Qualité de la donnée:')
 
 dqr_value = st.select_slider('Qualité de la donné',
     options=[1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
