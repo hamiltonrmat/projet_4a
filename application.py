@@ -71,9 +71,5 @@ variables = ['Changement climatique',
        'Utilisation du sol', 'Épuisement des ressources eau',
        'Épuisement des ressources énergétiques',
        'Épuisement des ressources minéraux']
-st.header('Les variables')
-cols_list = st.selectbox('Choisisez une variable', (i for i in variables))
 
-st.write('Votre selection:', cols_list)
-
-st.line_chart(df[cols_list])
+variable_select = st.radio("Voici les variables:",[i for i in variables],captions = [i for i in variables])
