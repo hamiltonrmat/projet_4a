@@ -47,7 +47,7 @@ st.divider()
 
 st.header('Qualité de la donnée:')
 dqr_value = st.select_slider('Qualité de la donné',
-    options=[1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
+    options=[1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5], 1.5)
 st.write('Donnés avec DQR plus petit que:', dqr_value)
 
 
@@ -58,5 +58,5 @@ col1, col2 = st.columns(2)
 col1.metric("Produits", str(df.shape[0]))
 col2.metric("Paramètres", str(df.shape[1]))
 a = np.round(df.shape[0] / data.shape[0],3)*100
-st.write("Porcentage de produits gardés (par rapport au total :", a)
+st.write("Porcentage de produits gardés (par rapport au total :", a, " %")
 st.divider()
