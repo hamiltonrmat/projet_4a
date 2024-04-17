@@ -41,13 +41,20 @@ st.dataframe(data)
 st.write(data.shape)
 col1, col2 = st.columns(2)
 col1.metric("Produits", str(data.shape[0]))
-col2.metric("Produits", str(data.shape[1]))
-
-
+col2.metric("Paramètres", str(data.shape[1]))
 st.divider()
 
-st.header('Qualité de la donnée:')
 
+st.header('Qualité de la donnée:')
 dqr_value = st.select_slider('Qualité de la donné',
     options=[1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
 st.write('Donnés avec DQR plus petit que:', dqr_value)
+
+
+df = data[data["DQR"]<dqr_value]
+st.dataframe(df)
+st.write(df.shape)
+col1, col2 = st.columns(2)
+col1.metric("Produits", str(df.shape[0]))
+col2.metric("Paramètres", str(df.shape[1]))
+st.divider()
