@@ -95,3 +95,8 @@ min_EF, max_EF, mean_EF = st.columns(3)
 min_EF.metric("Min", df['Score unique EF'].min())
 max_EF.metric("Max", df['Score unique EF'].max())
 mean_EF.metric("Moyenne", df['Score unique EF'].mean())
+
+fig = px.scatter_ternary(df, a='Changement climatique', b="Particules fines", c='effets_toxico_cancer', hover_name="Nom du Produit en Français")
+st.plotly_chart(fig, use_container_width=True)
+
+st.plotly_chart(fig, use_container_width=True)
