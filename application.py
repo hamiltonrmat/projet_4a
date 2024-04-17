@@ -61,7 +61,9 @@ a = np.round(df.shape[0] / data.shape[0],3)*100
 st.write("Porcentage de produits gardés (par rapport au total) :", a, " %")
 st.divider()
 
-st.write(cols)
+option = st.selectbox('Variables?', (i for i in cols))
+
+st.write('You selected:', option)
 
 st.header('Score unique EF')
 st.line_chart(df['Score unique EF'])
