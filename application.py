@@ -40,8 +40,8 @@ st.header("Les données AgriBalyse brutes")
 st.dataframe(data)
 st.write(data.shape)
 col1, col2 = st.columns(2)
-col1.metric("Lignes", "70 °F", "1.2 °F")
-col2.metric("Produits", "9 mph", "-8%")
+col1.metric("Produits", "70 °F")
+col2.metric("Produits", "9 mph")
 
 
 st.divider()
