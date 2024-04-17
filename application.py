@@ -44,7 +44,7 @@ st.write("Les données AgriBalyse brutes")
 st.dataframe(data)
 
 st.divider() 
-
+st.write("Description statistique du dataset")
 st.dataframe(data.describe())
 
 st.write("Des buttons")
