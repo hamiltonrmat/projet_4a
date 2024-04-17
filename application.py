@@ -12,25 +12,23 @@ st.title('Projet 4A - Traitement de données alimentaires')
 
 #ajouter une image
 st.image('Agribalyse-image1.png')
-st.caption('Image')
+st.caption('Petite description')
 
 st.header('La base de données AgriBalyse')
-
 st.write("This is some text.")
-
 st.divider() # diviseur
 
 st.write("This text is between the horizontal rules.")
-
 st.divider()  # 👈 Another horizontal rule
 
+st.write("This text is between the horizontal rules.")
 st.caption('Mini text pour expliquer quelque chose')
-
 st.divider() 
 ################
 
-st.header('Aficher nos datasets traités (ou bruts)')
-
+st.write("l'ACV")
+st.caption('Mini text pour expliquer quelque chose')
+st.divider()
 
 ### du code qui vient de notre notebook, ne fait pas partie de l'affichage
 data = pd.read_csv('Agribalyse_Synthese (2).csv')
