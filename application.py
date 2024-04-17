@@ -45,7 +45,7 @@ st.dataframe(data)
 
 st.divider() 
 
-data.describe()
+st.dataframe(data.describe())
 
 st.write("Des buttons")
 
