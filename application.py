@@ -26,7 +26,7 @@ st.caption('Mini text pour expliquer quelque chose')
 st.divider() 
 ################
 
-st.write("l'ACV")
+st.title("l'ACV")
 st.caption('Mini text pour expliquer quelque chose')
 st.divider()
 
