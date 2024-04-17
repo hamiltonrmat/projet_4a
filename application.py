@@ -48,7 +48,7 @@ st.divider()
 
 st.header('Qualité de la donnée:')
 dqr_value = st.select_slider('Qualité de la donné',
-    options=[1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
+    options=[1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
 st.write('Donnés avec DQR plus petit que:', dqr_value)
 
 
