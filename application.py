@@ -10,19 +10,21 @@ import streamlit as st
 
 st.title('Projet 4A - AgriBalyse')
 
+#ajouter une image
 st.image('Agribalyse-image1.png')
+st.caption('Image')
 
 st.header('Exemples pour écrire du text')
 
 st.write("This is some text.")
 
-st.slider("This is a slider", 1, 5, (2, 3))
+st.slider("Sélectionner la qualité de la donné", 1, 5, (2, 3))
 
 st.divider() # diviseur
 
 st.write("This text is between the horizontal rules.")
 
-st.divider() 
+st.divider()  # 👈 Another horizontal rule
 
 st.caption('Mini text pour expliquer quelque chose')
 
@@ -42,9 +44,4 @@ st.dataframe(data)
 st.divider() 
 st.write("Des buttons")
 
-st.button('Reset')
-
-if st.button('Say hello'):
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
+st.button("Groupes d'aliments")
