@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-st.title('Projet 4A - AgriBalyse')
+st.title('Projet 4 - AgriBalyse')
 
 #ajouter une image
 st.image('Agribalyse-image1.png')
