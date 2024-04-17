@@ -57,4 +57,6 @@ st.write(df.shape)
 col1, col2 = st.columns(2)
 col1.metric("Produits", str(df.shape[0]))
 col2.metric("Paramètres", str(df.shape[1]))
+a = np.round(df.shape[0] / data.shape[0],3)*100
+st.write("Porcentage de produits gardés (par rapport au total :", a)
 st.divider()
