@@ -79,4 +79,4 @@ variable_select = st.selectbox('Choisisez une variable', (i for i in variables))
 
 st.write('Votre selection:', variable_select)
 
-st.line_chart(df[variable_select])
+st.line_chart(df[str(variable_select)])
