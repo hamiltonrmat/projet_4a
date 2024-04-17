@@ -75,3 +75,5 @@ st.header('Les variables')
 cols_list = st.selectbox('Choisisez une variable', (i for i in variables))
 
 st.write('Votre selection:', cols_list)
+
+st.line_chart(df[cols_list])
