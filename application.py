@@ -1,7 +1,11 @@
 import pandas as pd
 import numpy as np
-#import matplotlib.pyplot as plt
-#import seaborn as sns
+import os,sys,inspect
+current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir)
+import matplotlib.pyplot as plt
+import seaborn as sns
 import streamlit as st
 
 st.title('Projet 4A - AgriBalyse')
@@ -34,3 +38,13 @@ data = pd.read_csv('Agribalyse_Synthese (2).csv')
 ## ici oui on l'affiche avec st
 st.write("Les données AgriBalyse brutes")
 st.dataframe(data)
+
+st.divider() 
+st.write("Des buttons")
+
+st.button('Reset')
+
+if st.button('Say hello'):
+    st.write('Why hello there')
+else:
+    st.write('Goodbye')
