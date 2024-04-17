@@ -39,9 +39,9 @@ data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "eff
 st.header("Les données AgriBalyse brutes")
 st.dataframe(data)
 st.write(data.shape)
-col1, col2 = st.columns(2)
-col1.metric("Produits", str(data.shape[0]))
-col2.metric("Paramètres", str(data.shape[1]))
+cols_data, lignes_data = st.columns(2)
+cols_data.metric("Produits", str(data.shape[0]))
+lignes_data.metric("Paramètres", str(data.shape[1]))
 st.divider()
 
 
@@ -54,9 +54,9 @@ st.write('Donnés avec DQR plus petit que:', dqr_value)
 df = data[data["DQR"]<dqr_value]
 st.dataframe(df)
 st.write(df.shape)
-col1, col2 = st.columns(2)
-col1.metric("Produits", str(df.shape[0]))
-col2.metric("Paramètres", str(df.shape[1]))
+lignes_df, cols_df= st.columns(2)
+lignes_df.metric("Produits", str(df.shape[0]))
+cols_df.metric("Paramètres", str(df.shape[1]))
 a = np.round(df.shape[0] / data.shape[0],3)*100
 st.write("Porcentage de produits gardés (par rapport au total) :", a, " %")
 st.divider()
