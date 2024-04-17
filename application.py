@@ -4,12 +4,6 @@ import os,sys,inspect
 current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
-import sys, os.path as path
-from inspect import getsourcefile
-
-parent_dir = path.dirname(path.dirname(path.abspath(getsourcefile(lambda: 0))))
-sys.path.append(path.join(parent_dir, 'RepositoryName'))
-#import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
