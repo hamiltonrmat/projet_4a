@@ -18,8 +18,6 @@ st.header('Exemples pour écrire du text')
 
 st.write("This is some text.")
 
-st.slider("Sélectionner la qualité de la donné", 1, 5, (2, 3))
-
 st.divider() # diviseur
 
 st.write("This text is between the horizontal rules.")
@@ -43,10 +41,11 @@ data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "eff
 st.write("Les données AgriBalyse brutes")
 st.dataframe(data)
 
-st.divider() 
+st.divider()
+
 st.write("Description statistique du dataset")
 st.dataframe(data.describe())
 
-st.write("Des buttons")
-
-st.button("Groupes d'aliments")
+dqr_value = st.select_slider('Qualité de la donné',
+    options=[1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
+st.write('Donnés avec DQR plus petit que:', dqr_value)
