@@ -16,7 +16,7 @@ st.header('Exemples pour écrire du text')
 
 st.write("This is some text.")
 
-st.slider("This is a slider", 0, 100, (25, 75))
+st.slider("This is a slider", 1, 5, (2, 3))
 
 st.divider() # diviseur
 
