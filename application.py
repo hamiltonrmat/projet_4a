@@ -18,12 +18,13 @@ st.caption('Petite description')
 st.header('La base de données AgriBalyse')
 st.write("This is some text.")
 
-with st.expander("Cliquez pour en savoir plus !"):
-    st.write(
-        "The chart above shows some numbers I picked for you.
-        I rolled actual dice for these, so they're *guaranteed* to
-        be random.")
-    st.image("https://static.streamlit.io/examples/dice.jpg")
+expander = st.expander("Cliquez ici pour plus d'informations")
+expander.write(\"\"\"
+    The chart above shows some numbers I picked for you.
+    I rolled actual dice for these, so they're *guaranteed* to
+    be random.
+\"\"\")
+expander.image("https://static.streamlit.io/examples/dice.jpg")
 
 st.divider() # diviseur
 
