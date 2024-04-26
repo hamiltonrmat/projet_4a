@@ -19,7 +19,7 @@ st.header('La base de données AgriBalyse')
 st.write("This is some text.")
 
 expander = st.expander("Cliquez ici pour plus d'informations")
-expander.write("rtrtrttrtrtrtrtr)
+expander.write("rtrtrttrtrtrtrtr')
 expander.image("https://static.streamlit.io/examples/dice.jpg")
 
 st.divider() # diviseur
