@@ -17,6 +17,15 @@ st.caption('Petite description')
 
 st.header('La base de données AgriBalyse')
 st.write("This is some text.")
+
+with st.expander("Cliquez pour en savoir plus !"):
+    st.write(\"\"\"
+        The chart above shows some numbers I picked for you.
+        I rolled actual dice for these, so they're *guaranteed* to
+        be random.
+    \"\"\")
+    st.image("https://static.streamlit.io/examples/dice.jpg")
+
 st.divider() # diviseur
 
 st.write("This text is between the horizontal rules.")
@@ -27,7 +36,7 @@ st.caption('Mini text pour expliquer quelque chose')
 st.divider() 
 ################
 
-st.title("l'ACV")
+st.header("l'ACV")
 st.caption('Mini text pour expliquer quelque chose')
 st.divider()
 
