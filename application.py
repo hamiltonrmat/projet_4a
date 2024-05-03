@@ -9,7 +9,7 @@ import seaborn as sns
 import streamlit as st
 import plotly.express as px
 
-st.title('Projet 4A - Traitement de données alimentaires')
+st.title('Projettt 4A - Traitement de données alimentaires')
 
 #ajouter une image
 st.image('Agribalyse-image1.png')
