@@ -11,31 +11,6 @@ import plotly.express as px
 
 st.title('Projet 4A - Traitement de données alimentaires')
 
-#ajouter une image
-st.image('Agribalyse-image1.png')
-st.caption('Petite description')
-
-st.header('La base de données AgriBalyse')
-st.write("Quelques mots sur la base de données")
-
-expander = st.expander("Cliquez ici pour plus d'informations")
-expander.write("rtrtrttrtrtrtrtr")
-expander.image("https://static.streamlit.io/examples/dice.jpg")
-
-st.divider() # diviseur
-
-st.write("This text is between the horizontal rules.")
-st.divider()  # 👈 Another horizontal rule
-
-st.write("This text is between the horizontal rules.")
-st.caption('Mini text pour expliquer quelque chose')
-st.divider() 
-################
-
-st.header("l'ACV")
-st.caption('Mini text pour expliquer quelque chose')
-st.divider()
-
 ### du code qui vient de notre notebook, ne fait pas partie de l'affichage
 data = pd.read_csv('Agribalyse_Synthese (2).csv')
 cols = list(data.columns)
@@ -104,4 +79,3 @@ mean_EF.metric("Moyenne", df['Score unique EF'].mean())
 
 fig = px.scatter_ternary(df, a='Changement climatique', b="Particules fines", c='effets_toxico_cancer')
 st.plotly_chart(fig,theme="streamlit", use_container_width=True)
-
