@@ -63,10 +63,12 @@ confirm = st.checkbox('Afficher détails')
 if confirm:
     st.write(variable_select)
     fig = px.histogram(df[variable_select], x=variable_select, nbins=10)
+    fig2 = px.box(df[variable_select], y=variable_select)
     st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig2, use_container_width=True)
     min_variable, max_variable, mean_variable = st.columns(3)
-    min_variable.metric("Min", np.round(df[variable_select].min(), 2))
-    max_variable.metric("Max", np.round(df[variable_select].max(), 2))
-    mean_variable.metric("Moyenne", np.round(df[variable_select].mean(), 2))
+    min_variable.metric("Min", np.round(df[variable_select].min(), 3))
+    max_variable.metric("Max", np.round(df[variable_select].max(), 3))
+    mean_variable.metric("Moyenne", np.round(df[variable_select].mean(), 3))
 
 
