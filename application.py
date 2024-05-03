@@ -16,7 +16,7 @@ st.image('Agribalyse-image1.png')
 st.caption('Petite description')
 
 st.header('La base de données AgriBalyse')
-st.write("This is some text.")
+st.write("Quelques mots sur la base de données")
 
 expander = st.expander("Cliquez ici pour plus d'informations")
 expander.write("rtrtrttrtrtrtrtr")
