@@ -62,9 +62,11 @@ confirm = st.checkbox('Afficher détails')
 
 if confirm:
     st.write(variable_select)
-    st.line_chart(df[variable_select])
+    fig = px.histogram(df[variable_select], x="total_bill")
+    fig.show()
     min_variable, max_variable, mean_variable = st.columns(3)
     min_variable.metric("Min", np.round(df[variable_select].min(), 2))
     max_variable.metric("Max", np.round(df[variable_select].max(), 2))
     mean_variable.metric("Moyenne", np.round(df[variable_select].mean(), 2))
+
 
