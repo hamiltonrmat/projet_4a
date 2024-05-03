@@ -9,6 +9,7 @@ import seaborn as sns
 import streamlit as st
 import plotly.express as px
 
+st.set_page_config(page_title='Introduction', initial_sidebar_state='auto')
 st.title('Projet 4A - Traitement de données alimentaires')
 
 #ajouter une image
