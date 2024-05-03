@@ -20,7 +20,7 @@ st.write("Quelques mots sur la base de données")
 
 expander = st.expander("Cliquez ici pour plus d'informations")
 expander.write("rtrtrttrtrtrtrtr")
-expander.image("https://agribalyse.ademe.fr/static/media/logo.e3e348f6.png")
+#expander.image("https://agribalyse.ademe.fr/static/media/logo.e3e348f6.png")
 
 st.divider() # diviseur
 
