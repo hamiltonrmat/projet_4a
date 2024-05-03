@@ -10,7 +10,8 @@ import streamlit as st
 import plotly.express as px
 
 st.set_page_config(page_title='Introduction', initial_sidebar_state='auto')
-st.title('Projet 4A - Traitement de données alimentaires')
+st.title('Introduction')
+st.write("La base de données Agribalyse")
 
 #ajouter une image
 st.image('Agribalyse-image1.png')
@@ -36,6 +37,5 @@ st.divider()
 st.header("l'ACV")
 st.caption('Mini text pour expliquer quelque chose')
 st.divider()
-
 
 
