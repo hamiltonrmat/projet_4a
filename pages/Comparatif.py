@@ -13,7 +13,6 @@ from sklearn import preprocessing
 
 st.title("Comparatif")
 
-
 data = pd.read_csv('https://www.data.gouv.fr/fr/datasets/r/743dfdb2-73c4-4312-8256-0bb2d9bbdd13')
 df2 = data[data["DQR"]<3]
 df2 = df2.drop(['Code AGB', 'Code CIQUAL', 'LCI Name', 'code saison', 'code avion',
@@ -68,7 +67,6 @@ couple_7["Couple"]=["Couple_7","Couple_7"]
 produits_cibles = pd.concat([couple_1, couple_2, couple_3, couple_4, couple_5,couple_6 ,couple_7])
 
 top_5_var = ['Particules fines', 'Acidification terrestre et eaux douces', 'Changement climatique', 'Eutrophisation terrestre', 'effets_toxico_cancer']
-
 
 scaler = preprocessing.MinMaxScaler()
 d = scaler.fit_transform(df2[top_5_var])
