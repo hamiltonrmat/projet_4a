@@ -14,4 +14,4 @@ col1, col2 = st.columns(2)
 with col1:
     st.image("https://www.actalia.eu/wp-content/uploads/2020/07/Agribalyse.jpg")
 with col2:
-   st.image("https://www.actalia.eu/wp-content/uploads/2020/07/Agribalyse.jpg")
+   st.image("https://lh7-us.googleusercontent.com/0CTFmliTC1Zl4Om49kH2ss7rt8We7gkkDxXyh1a1bViltFIu3xN8kKrs55A8_ACL2XFLmNdXvzQAom7Ts8LrXHVLabMhRPA0K6_SPJcftwoURd38HQ77nCMU-BkySOCp4dv932tV5MZlHwqfO5nckzcM5g=s2048")
