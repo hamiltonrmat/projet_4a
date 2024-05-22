@@ -74,8 +74,13 @@ scaler = preprocessing.MinMaxScaler()
 d = scaler.fit_transform(df2[top_5_var])
 scaled_df2 = pd.DataFrame(d, columns=df2[top_5_var].columns)
 scaled_df2.index = df2[top_5_var].index
-scaled_df2
+test_triangle = scaled_df2.loc[produits_cibles.index]
 
-st.dataframe(scaled_df2)
+st.dataframe(test_triangle)
+
+fig = px.line_polar(d, r=test_triangle.iloc[0,:].values, theta=top_5_var, line_close=True)
+st.plotly_chart(fig)
+
+
 
 
