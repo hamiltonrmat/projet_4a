@@ -81,6 +81,115 @@ st.dataframe(test_triangle)
 fig = px.line_polar(d, r=test_triangle.iloc[0,:].values, theta=top_5_var, line_close=True)
 st.plotly_chart(fig)
 
+fig = go.Figure()
+
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[0,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name='Product A'
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[1,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name='Product B'
+))
+
+
+st.plotly_chart(fig)
+
+fig = go.Figure()
+
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[0,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[0]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[1,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[1]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[2,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[2]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[3,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[3]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[4,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[4]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[5,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[5]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[6,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[6]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[7,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[7]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[8,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[8]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[9,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[9]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[10,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[10]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[11,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[11]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[12,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[12]
+))
+fig.add_trace(go.Scatterpolar(
+      r=test_triangle.iloc[13,:].values,
+      theta=top_5_var,
+      fill='toself',
+      name=produits_cibles['Nom du Produit en Français'].iloc[13]
+))
+
+
+st.plotly_chart(fig)
+
+
 
 
 
