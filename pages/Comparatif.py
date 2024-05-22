@@ -14,6 +14,8 @@ from sklearn import preprocessing
 st.title("Comparatif")
 
 data = pd.read_csv('https://www.data.gouv.fr/fr/datasets/r/743dfdb2-73c4-4312-8256-0bb2d9bbdd13')
+cols = list(data.columns)
+data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "effets_toxico_cancer"})
 df2 = data[data["DQR"]<3]
 df2 = df2.drop(['Code AGB', 'Code CIQUAL', 'LCI Name', 'code saison', 'code avion',
        'Livraison', "Matériau d'emballage", 'Préparation', 'DQR'],axis=1)
@@ -69,10 +71,11 @@ produits_cibles = pd.concat([couple_1, couple_2, couple_3, couple_4, couple_5,co
 top_5_var = ['Particules fines', 'Acidification terrestre et eaux douces', 'Changement climatique', 'Eutrophisation terrestre', 'effets_toxico_cancer']
 
 scaler = preprocessing.MinMaxScaler()
+d = scaler.fit_transform(df2[top_5_var])
+scaled_df2 = pd.DataFrame(d, columns=df2[top_5_var].columns)
+scaled_df2.index = df2[top_5_var].index
+scaled_df2
 
-
-
-
-st.dataframe(df2[top_5_var])
+st.dataframe(scaled_df2)
 
 
