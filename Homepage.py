@@ -16,4 +16,4 @@ with col1:
 
 with col2:
    st.image("https://lh7-us.googleusercontent.com/4N1kPTj6oyb9SPqfcYLXvUfD7a_i3ZB0phoR497KS1--SqioVUkx7riN3LYApywPh4cu_pnw4K1fTdu4f3J1-pRVG2zNYUmGauu5GG2cBWeFUK0gMhVVVw1Uu0WUKT4GxbPpuolMM0a13QGWmaIshbLEqg=s2048",
-           size=0.5)
+           width=0.5)
