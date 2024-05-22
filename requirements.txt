@@ -6,4 +6,4 @@ seaborn
 plotly.express
 plotly
 scikit-learn
-plotly.graph_objects
+
