@@ -12,6 +12,8 @@ import plotly.express as px
 
 st.title("Comparatif")
 
+
+data = pd.read_csv('https://www.data.gouv.fr/fr/datasets/r/743dfdb2-73c4-4312-8256-0bb2d9bbdd13')
 df2 = data[data["DQR"]<3]
 df2 = df2.drop(['Code AGB', 'Code CIQUAL', 'LCI Name', 'code saison', 'code avion',
        'Livraison', "Matériau d'emballage", 'Préparation', 'DQR'],axis=1)
