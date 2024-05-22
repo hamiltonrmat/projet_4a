@@ -27,6 +27,9 @@ lignes_data.metric("Paramètres", str(data.shape[1]))
 st.divider()
 
 
+st.image("https://autrecuisine.fr/warehouse/cache/large/poster_5f733477321f3.jpg.png")
+
+
 st.header('Qualité de la donnée:')
 dqr_value = st.select_slider('Qualité de la donné',
     options=[1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])
