@@ -6,4 +6,4 @@ seaborn
 plotly.express
 plotly
 scikit-learn
-preprocessing
+from sklearn import preprocessing
