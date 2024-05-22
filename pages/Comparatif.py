@@ -19,10 +19,7 @@ df2 = df2.drop(['Code AGB', 'Code CIQUAL', 'LCI Name', 'code saison', 'code avio
        'Livraison', "Matériau d'emballage", 'Préparation', 'DQR'],axis=1)
 
 groupes = list(df2["Groupe d'aliment"].unique())
-(groupes, len(groupes))
-
 sous_groupes = list(df2["Sous-groupe d'aliment"].unique())
-(sous_groupes, len(sous_groupes))
 
 produits = []
 produit_1 = 'Comté'
@@ -69,5 +66,28 @@ couple_7 = df2[(df2['Nom du Produit en Français'] == produit_1) | (df2['Nom du 
 couple_7["Couple"]=["Couple_7","Couple_7"]
 produits_cibles = pd.concat([couple_1, couple_2, couple_3, couple_4, couple_5,couple_6 ,couple_7])
 
+top_5_var = ['Particules fines',
+ 'Acidification terrestre et eaux douces',
+ 'Changement climatique',
+ 'Eutrophisation terrestre',
+ 'effets_toxico_cancer']
+
+cols_importantes = ['Score unique EF',
+ 'Particules fines',
+ 'Acidification terrestre et eaux douces',
+ 'Changement climatique',
+ 'Eutrophisation terrestre',
+ 'effets_toxico_cancer']
+
+scaler = preprocessing.MinMaxScaler()
+d = scaler.fit_transform(df2[top_5_var])
+scaled_df2 = pd.DataFrame(d, columns=df2[top_5_var].columns)
+scaled_df2.index = df2[top_5_var].index
+
+test_triangle = scaled_df2.loc[produits_cibles.index]
+
+fig = px.line_polar(d, r=test_triangle.iloc[0,:].values, theta=top_5_var, line_close=True)
+
 st.dataframe(produits_cibles)
+
 
