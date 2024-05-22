@@ -69,10 +69,10 @@ produits_cibles = pd.concat([couple_1, couple_2, couple_3, couple_4, couple_5,co
 top_5_var = ['Particules fines', 'Acidification terrestre et eaux douces', 'Changement climatique', 'Eutrophisation terrestre', 'effets_toxico_cancer']
 
 scaler = preprocessing.MinMaxScaler()
-df2[top_5_var]
 
 
 
-st.dataframe(produits_cibles)
+
+st.dataframe(df2[top_5_var])
 
 
