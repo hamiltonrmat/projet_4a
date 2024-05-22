@@ -67,18 +67,8 @@ couple_7 = df2[(df2['Nom du Produit en Français'] == produit_1) | (df2['Nom du 
 couple_7["Couple"]=["Couple_7","Couple_7"]
 produits_cibles = pd.concat([couple_1, couple_2, couple_3, couple_4, couple_5,couple_6 ,couple_7])
 
-top_5_var = ['Particules fines',
- 'Acidification terrestre et eaux douces',
- 'Changement climatique',
- 'Eutrophisation terrestre',
- 'effets_toxico_cancer']
+top_5_var = ['Particules fines', 'Acidification terrestre et eaux douces', 'Changement climatique', 'Eutrophisation terrestre', 'effets_toxico_cancer']
 
-cols_importantes = ['Score unique EF',
- 'Particules fines',
- 'Acidification terrestre et eaux douces',
- 'Changement climatique',
- 'Eutrophisation terrestre',
- 'effets_toxico_cancer']
 
 scaler = preprocessing.MinMaxScaler()
 d = scaler.fit_transform(df2[top_5_var])
