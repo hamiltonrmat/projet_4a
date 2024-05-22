@@ -15,4 +15,4 @@ with col1:
     st.page_link("https://agribalyse.ademe.fr/", label="Page offitielle Ademe", icon="🌎")
 
 with col2:
-   st.image("https://www.static.inrae.fr/cdn/ff/VoSKX7-O_CnYVPGPXTYLwmevKPz0YGDsQwPriPEhhNI/1601368205/public/png/bandeau%20Agribalyse.png")
+   st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/LOGO_UNILASALLE_INSTITUT_POLYTECHNIQUE_QUADRI.png/1200px-LOGO_UNILASALLE_INSTITUT_POLYTECHNIQUE_QUADRI.png")
