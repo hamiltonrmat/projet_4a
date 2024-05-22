@@ -6,6 +6,9 @@ st.title('Projet 4A - Traitement de données alimentaires')
 
 col1, col2 = st.columns(2)
 
+st.image("https://www.static.inrae.fr/cdn/ff/VoSKX7-O_CnYVPGPXTYLwmevKPz0YGDsQwPriPEhhNI/1601368205/public/png/bandeau%20Agribalyse.png")
+
+
 with col1:
     st.page_link("Homepage.py", label="Homepage", icon="🏠")
     st.page_link("pages/1_📚_Introduction.py", label="Introduction", icon="1️⃣")
