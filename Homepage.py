@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="AgriBalyse UniLaSalle", initial_sidebar_state='auto', layout="wide")
 st.title('Projet 4A - Traitement de données alimentaires')
 
-st.image("https://www.static.inrae.fr/cdn/ff/VoSKX7-O_CnYVPGPXTYLwmevKPz0YGDsQwPriPEhhNI/1601368205/public/png/bandeau%20Agribalyse.png")
+st.image("https://www.actalia.eu/wp-content/uploads/2020/07/Agribalyse.jpg")
 
 col1, col2 = st.columns(2)
 with col1:
