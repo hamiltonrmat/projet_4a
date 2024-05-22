@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.set_page_config(page_title="AgriBalyse UniLaSalle", initial_sidebar_state='auto')
+st.set_page_config(page_title="AgriBalyse UniLaSalle", initial_sidebar_state='auto', layout="wide")
 st.title('Projet 4A - Traitement de données alimentaires')
 
 col1, col2 = st.columns(2)
