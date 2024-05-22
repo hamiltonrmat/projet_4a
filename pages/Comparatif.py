@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 import plotly.express as px
-from sklearn import preprocessing
+from sklearn.preprocessing import MinMaxScaler
 
 
 st.title("Comparatif")
