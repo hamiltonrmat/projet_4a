@@ -9,7 +9,7 @@ import seaborn as sns
 import streamlit as st
 import plotly.express as px
 
-st.set_page_config(page_title="Introduction", initial_sidebar_state='auto')
+st.set_page_config(page_title="Introduction", initial_sidebar_state='auto', layout="wide")
 st.title('Introduction')
 st.write("La base de données Agribalyse")
 
