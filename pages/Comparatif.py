@@ -216,6 +216,8 @@ kmeans.fit(ds)
 
 centroids = kmeans.cluster_centers_
 
+centroids
+
 
 
 
