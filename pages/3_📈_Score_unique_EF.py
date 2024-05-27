@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 import plotly.express as px
+from sklearn import preprocessing
+import plotly.graph_objects as go
 
 st.set_page_config(page_title="Score unique EF", initial_sidebar_state='auto', layout="wide")
 data = pd.read_csv('Agribalyse_Synthese (2).csv')
