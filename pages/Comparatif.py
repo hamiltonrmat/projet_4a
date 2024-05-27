@@ -191,8 +191,24 @@ fig.add_trace(go.Scatterpolar(
 
 st.plotly_chart(fig)
 
+variables = ['Changement climatique',
+ "Appauvrissement de la couche d'ozone",
+ 'Rayonnements ionisants',
+ "Formation photochimique d'ozone",
+ 'Particules fines',
+ 'effets_toxico_non_cancer',
+ 'effets_toxico_cancer',
+ 'Acidification terrestre et eaux douces',
+ 'Eutrophisation eaux douces',
+ 'Eutrophisation marine',
+ 'Eutrophisation terrestre',
+ "Écotoxicité pour écosystèmes aquatiques d'eau douce",
+ 'Utilisation du sol',
+ 'Épuisement des ressources eau',
+ 'Épuisement des ressources énergétiques',
+ 'Épuisement des ressources minéraux']
 
-ds = df[variables]
+ds = df2[variables]
 
 k = 3
 kmeans = KMeans(n_clusters=k, n_init="auto")
