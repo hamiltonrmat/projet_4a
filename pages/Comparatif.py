@@ -10,6 +10,7 @@ import streamlit as st
 import plotly.express as px
 from sklearn import preprocessing
 import plotly.graph_objects as go
+from sklearn.cluster import KMeans
 
 
 st.title("Comparatif")
@@ -189,6 +190,15 @@ fig.add_trace(go.Scatterpolar(
 
 
 st.plotly_chart(fig)
+
+
+ds = df[variables]
+
+k = 3
+kmeans = KMeans(n_clusters=k, n_init="auto")
+kmeans.fit(ds)
+
+centroids = kmeans.cluster_centers_
 
 
 
