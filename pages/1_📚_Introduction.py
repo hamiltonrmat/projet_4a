@@ -10,6 +10,7 @@ import streamlit as st
 import plotly.express as px
 from sklearn import preprocessing
 import plotly.graph_objects as go
+from sklearn.cluster import KMeans
 
 st.set_page_config(page_title="Introduction", initial_sidebar_state='auto', layout="wide")
 st.title('Introduction')
