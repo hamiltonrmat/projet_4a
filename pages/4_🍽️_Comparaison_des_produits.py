@@ -17,7 +17,7 @@ st.title("Comparaison des couples de produits")
 
 st.write("Nous avons décidé de former des couples de produits pour répondre à notre problématique d'origine :")
 st.write("- Est-ce que l'impact environnemental est le même lorsque l'on compare des produits similaires (appartenants au même groupe d'aliment)  ?")
-data = pd.read_csv('https://www.data.gouv.fr/fr/datasets/r/743dfdb2-73c4-4312-8256-0bb2d9bbdd13')
+data = pd.read_csv('Agribalyse_Synthese (2).csv')
 cols = list(data.columns)
 data = data.rename(columns={cols[18]: "effets_toxico_non_cancer", cols[19]: "effets_toxico_cancer"})
 df2 = data[data["DQR"]<3]
